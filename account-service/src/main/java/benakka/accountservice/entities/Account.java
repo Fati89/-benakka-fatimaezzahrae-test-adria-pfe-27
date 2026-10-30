@@ -14,7 +14,7 @@ import java.util.Date;
 @Entity
 @Data @AllArgsConstructor @NoArgsConstructor @Builder
 public class Account {
-    @Id @GeneratedValue(strategy = GenerationType.UUID)
+    @Id
     private String id;
     private String customerReference;
     private Status status;

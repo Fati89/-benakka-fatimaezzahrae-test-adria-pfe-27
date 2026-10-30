@@ -1,9 +1,7 @@
 package benakka.transactionservice.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import benakka.transactionservice.model.Account;
+import jakarta.persistence.*;
 import jakarta.ws.rs.SeBootstrap;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -24,5 +22,7 @@ public class Transaction {
     private String merchantCategory;
     private String country;
     private Date createdAt;
+    @Transient
+    private Account account;
 
 }
