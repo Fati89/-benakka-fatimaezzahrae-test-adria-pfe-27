@@ -7,6 +7,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -24,5 +25,8 @@ public class Transaction {
     private Date createdAt;
     @Transient
     private Account account;
+
+    @Value("${bank.transaction.max-amount}")
+    private BigDecimal maxAmount;
 
 }
