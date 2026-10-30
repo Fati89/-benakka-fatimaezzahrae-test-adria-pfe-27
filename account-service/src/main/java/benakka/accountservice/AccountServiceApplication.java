@@ -1,4 +1,4 @@
-package benakka.accountservice;
+package benakka.accountservice.AccountServiceApplication;
 
 import benakka.accountservice.entities.Account;
 import benakka.accountservice.enums.Status;

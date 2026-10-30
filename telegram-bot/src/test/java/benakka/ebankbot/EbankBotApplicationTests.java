@@ -1,10 +1,10 @@
-package benakka.botservice;
+package benakka.ebankbot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BotServiceApplicationTests {
+class EbankBotApplicationTests {
 
     @Test
     void contextLoads() {
