@@ -24,4 +24,5 @@ public class Transaction {
     private String merchantCategory;
     private String country;
     private Date createdAt;
+
 }
